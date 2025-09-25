@@ -6,16 +6,30 @@
   body {
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Nasconde le barre di scorrimento del body */
+    overflow: hidden;
+    background: repeating-linear-gradient(45deg,
+        #1b1f29,
+        #1b1f29 2px,
+        rgb(46, 46, 46) 4px,
+        rgb(46, 46, 46) 6px);
   }
-  iframe {
-    width: 100vw; /* 100% della larghezza della viewport */
-    height: 100vh; /* 100% dell'altezza della viewport */
-    border: none; /* Rimuove il bordo dell'iframe */
+
+  body div {
+    margin: auto;
+  }
+
+  .link-button {
+    padding: 1px;
+    border: 1px solid #ebebeb;
+    border-radius: 15px;
+    background-color: #059290;
+    color: white;
   }
 </style>
 </head>
 <body>
-<iframe src="https://script.google.com/macros/s/AKfycbzcKWB_zeSpLAJtedhArqR_BbmID0A0f3npLcafoRrDO3DUIOC-0ru1m4r2QegauCWT/exec"></iframe>
+  <div class="link-button">
+    <a href="https://script.google.com/macros/s/AKfycbzcKWB_zeSpLAJtedhArqR_BbmID0A0f3npLcafoRrDO3DUIOC-0ru1m4r2QegauCWT/exec">Accedi al portale</a>
+  </div>
 </body>
 </html>
